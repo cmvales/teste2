@@ -1,0 +1,28 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+}
+figure {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+figcaption {
+    padding: 10px;
+    text-align: center;
+    background: #f9f9f9;
+    font-style: italic;
+    color: black;
+}
+ 
+

@@ -1,0 +1,54 @@
+article {
+    flex: 3; /* Ocupa 3 partes do espaço disponível */
+}
+
+aside {
+    flex: 1; /* Ocupa 1 parte do espaço disponível */
+    background: #fff; /* Cor de fundo branca */
+    padding: 20px; /* Espaço interno */
+    margin-left: 20px; /* Espaço à esquerda da barra lateral */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilos para seções de serviço */
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    border-bottom: #333;
+}
+
+.service h3 {
+    margin: 0;
+    color: #555;
+}
+
+.service p {
+    margin: 5px 0;
+}
+
+/* Estilos para a seção de FAQ */
+.faq {
+    list-style: none;
+    padding: 0;
+}
+
+.faq li {
+    margin-bottom: 10px;
+}
+
+.faq h4 {
+    margin: 0;
+    color: #444;
+}
+
+.faq p {
+    margin: 5px 0;
+}

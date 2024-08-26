@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    overflow-x: hidden; 
+}
+header {
+    width: 100%; 
+    overflow: hidden; 
+}
+header img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    display: block; 
+}
+nav {
+    background-color: white; 
+    padding: 5px 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+nav img {
+    width: 200px; 
+    height: auto; 
+}
+nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    display: flex; 
+}
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: black;
+    padding: 5px 8px; 
+    display: inline-block; 
+}
+
+nav ul li a:hover {
+    background-color: #d8b6e6; 
+    border-radius: 4px; 
+}
+
+
+.dropdown {
+    position: relative; /* Permite o posicionamento do conteúdo do dropdown em relação a este contêiner */
+    display: inline-block; /* Exibe o contêiner como um bloco em linha */
+}
+
+/* Estilo para o conteúdo do menu suspenso */
+.dropdown-content {
+    display: none; /* Oculta o conteúdo por padrão */
+    position: absolute; /* Posiciona o conteúdo em relação ao contêiner .dropdown */
+    background-color: #cec0c0; /* Define a cor de fundo do menu */
+    min-width: 100px; /* Define uma largura mínima para o menu */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao menu */
+    top: 100%; /* Posiciona o menu imediatamente abaixo do contêiner .dropdown */
+    left: 0; /* Alinha o menu à esquerda do contêiner .dropdown */
+}
+
+/* Estilo para os links dentro do menu suspenso */
+.dropdown-content a {
+    color: black; /* Define a cor do texto dos links */
+    padding: 16px 18px; /* Adiciona espaçamento interno ao redor do texto */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    display: block; /* Exibe os links como blocos para facilitar o clique */
+    text-align: left; /* Alinha o texto dos links à esquerda */
+}
+
+/* Estilo para o estado de sobrevoo dos links */
+.dropdown-content a:hover {
+    background-color: #ecd4d4; /* Altera a cor de fundo do link quando o mouse passa sobre ele */
+}
+
+/* Exibe o conteúdo do menu quando o contêiner é sobrevoado */
+.dropdown:hover .dropdown-content {
+    display: block; /* Exibe o conteúdo do menu suspenso */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #ecd4d4; /* Cor de fundo suave */
+    color: black; /* Cor do texto */
+    padding: 10px; /* Espaço ao redor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    position: relative; /* Necessário para a posição do rodapé */
+    bottom: 0; /* Fixa o rodapé na parte inferior */
+    width: 100%; /* Largura completa */
+}
+
+/* Media Queries */
+
+/* Para telas grandes (largura mínima de 992px) */
+@media (min-width: 992px) {
+    nav ul {
+        margin-left: auto; /* Alinha o menu à direita em telas grandes */
+    }
+
+    nav ul li {
+        margin-right: 20px; /* Aumenta o espaço entre os itens do menu */
+    }
+}
+
+/* Para telas médias (largura máxima de 767px) */
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column; /* Alinha logo e menu verticalmente */
+        align-items: flex-start; /* Alinha os itens do menu ao início */
+    }
+
+    nav ul {
+        flex-direction: column; /* Exibe itens do menu verticalmente */
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove a margem direita dos itens do menu */
+        margin-bottom: 10px; /* Adiciona espaço abaixo dos itens do menu */
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0; /* Remove o espaço abaixo do último item */
+    }
+
+    nav img {
+        width: 150px; /* Reduz a largura do logo em telas menores */
+    }
+}

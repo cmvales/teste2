@@ -1,0 +1,47 @@
+/* Estilos para os títulos */
+h1 {
+    margin-bottom: 20px; /* Espaço abaixo do título principal */
+    color: #ecd4d4; /* Cor do título */
+}
+
+/* Estilo geral para o formulário */
+form {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    padding: 20px; /* Espaço interno do formulário */
+    border: 1px solid #ecd4d4; /* Borda ao redor do formulário */
+    border-radius: 8px; /* Bordas arredondadas do formulário */
+    background-color: #fff; /* Cor de fundo do formulário */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao redor do formulário */
+}
+
+/* Estilos para os campos de entrada e seleção */
+input[type="text"],
+input[type="email"],
+input[type="tel"], /* Adiciona estilo para o campo de telefone */
+textarea,
+select {
+    width: 100%; /* Largura total do campo */
+    padding: 12px; /* Espaço interno dos campos */
+    margin-bottom: 20px; /* Espaço abaixo dos campos */
+    border: 1px solid #ecd4d4; /* Borda dos campos */
+    border-radius: 4px; /* Bordas arredondadas dos campos */
+    box-sizing: border-box; /* Inclui bordas e preenchimento nas dimensões do elemento */
+    font-size: 16px; /* Tamanho da fonte */
+    background-color: #fafafa; /* Cor de fundo dos campos */
+}
+
+/* Estilos para os rótulos dos campos */
+label {
+    display: block;
+    margin-bottom: 5px; /* Espaço abaixo dos rótulos */
+    font-weight: bold; /* Destaca os rótulos */
+    color: rgb(85, 85, 85); /* Cor dos rótulos */
+}
+
+/* Estilo para a área de mensagem */
+textarea {
+    height: 150px; /* Altura da área de mensagem */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
